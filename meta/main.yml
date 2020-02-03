@@ -1,0 +1,28 @@
+---
+galaxy_info:
+  author: Jeremie CUADRADO
+  role_name: ansible
+  description: Ansible role install ansible on remote host
+  license: GPLv3
+  company: Redbeard-Consulting
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: Debian
+      versions:
+        - all
+    - name: CentOS
+      versions:
+        - all
+
+  galaxy_tags:
+    - ansible
+    - deployment
+    - CI
+    - CD
+    - python3
+    - pip3
+
+  dependencies:
+    - src: redbeard28.bootstrap
+    - src: redbeard28.pip3
